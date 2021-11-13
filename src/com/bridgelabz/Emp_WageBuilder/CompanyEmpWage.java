@@ -1,7 +1,6 @@
 package com.bridgelabz.Emp_WageBuilder;
 
-public class CompanyEmpWage 
-{
+public class CompanyEmpWage {
 
 	private final String company;
 	private final int empRatePerHour;
@@ -14,6 +13,14 @@ public class CompanyEmpWage
 		this.empRatePerHour = empRatePerHour;
 		this.numOfWorkingDays = numOfWorkingDays;
 		this.maxHoursPerMonth = maxHoursPerMonth;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public int getTotalEmpWage() {
+		return totalEmpWage;
 	}
 
 	public void setTotalEmpWage(int totalEmpWage) {
@@ -34,7 +41,8 @@ public class CompanyEmpWage
 
 	@Override
 	public String toString() {
-		return "Total Emp Wage for Company: " + company + " is: " + totalEmpWage;
-		}
+		return "CompanyEmployeeWage [company=" + company + ", empRatePerHour=" + empRatePerHour + ", numOfWorkingDays="
+				+ numOfWorkingDays + ", maxHoursPerMonth=" + maxHoursPerMonth + "]";
 	}
+}
 
