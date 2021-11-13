@@ -2,13 +2,35 @@ package com.bridgelabz.Emp_WageBuilder;
 
 public class EmpWageBuilder 
 {
+	private final String companyName;
+	private final int wagePerHr;
+	private final int maxWorkingDays;
+	private final int maxWorkingHrs;
+	private int totalWage;
+    	
+	
+    
+	 public EmpWageBuilder(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs) 
+	 {
+		super();
+		this.companyName = companyName;
+		this.wagePerHr = wagePerHr;
+		this.maxWorkingDays = maxWorkingDays;
+		this.maxWorkingHrs = maxWorkingHrs;
+	}
+	 
+	@Override
+	public String toString() {
+		return "EmpWageBuilder [companyName=" + companyName + ", wagePerHr=" + wagePerHr + ", maxWorkingDays="
+				+ maxWorkingDays + ", maxWorkingHrs=" + maxWorkingHrs + ", totalWage=" + totalWage + "]";
+	}
 
-	 public static void calculateTotalWage(String companyName, int wagePerHr, int maxWorkingDays, int maxWorkingHrs)
+	public void calculateTotalWage()
 	    {
+		 
 	        final int PART_TIME = 1;
 	        final int FULL_TIME = 2;
-	        int totalWage = 0;
-	        int workingHrs = 0;
+	         int workingHrs = 0;
 
 	        System.out.println("Details of " + companyName + " employee");
 	        System.out.println("-----------------------------------------------------");
@@ -41,9 +63,17 @@ public class EmpWageBuilder
 	    }
 	    public static void main(String args[])
 	    {
-	        calculateTotalWage("Amazon", 40, 15, 200);
-	        calculateTotalWage("BigBazar", 20, 20, 100);
+	    	EmpWageBuilder jio = new EmpWageBuilder("jio" , 40 , 15 , 8 );
+	    	EmpWageBuilder dmart = new EmpWageBuilder("dmart" , 70 , 25 , 8 );
+	    	jio.calculateTotalWage();
+	        dmart.calculateTotalWage();
+	        
+	        System.out.println(jio);
+	        System.out.println(dmart);
+
+	        
 	    }
+	    
 
 }
 
