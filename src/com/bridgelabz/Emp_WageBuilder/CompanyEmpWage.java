@@ -42,7 +42,6 @@ public class CompanyEmpWage {
 	@Override
 	public String toString() {
 		return "CompanyEmployeeWage [company=" + company + ", empRatePerHour=" + empRatePerHour + ", numOfWorkingDays="
-				+ numOfWorkingDays + ", maxHoursPerMonth=" + maxHoursPerMonth + "]";
+				+ numOfWorkingDays + ", maxHoursPerMonth=" + maxHoursPerMonth + ", totalEmpWage=" + totalEmpWage + "]";
 	}
 }
-

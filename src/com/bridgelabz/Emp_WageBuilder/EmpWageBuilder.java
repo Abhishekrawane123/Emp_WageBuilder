@@ -12,9 +12,9 @@ public class EmpWageBuilder implements EmployeeService {
 		companyEmpWageList = new ArrayList<CompanyEmpWage>();
 	}
 
-	public void addCompanyEmpWage(String company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth) 
-	{
-		CompanyEmpWage companyEmpWage = new CompanyEmpWage(company, empRatePerHour, numOfWorkingDays,maxHoursPerMonth);
+	public void addCompanyEmpWage(String company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth) {
+		CompanyEmpWage companyEmpWage = new CompanyEmpWage(company, empRatePerHour, numOfWorkingDays,
+				maxHoursPerMonth);
 		companyEmpWageList.add(companyEmpWage);
 	}
 
@@ -62,8 +62,7 @@ public class EmpWageBuilder implements EmployeeService {
 		
 	}
 
-}
-
+} 
 	
 
 
