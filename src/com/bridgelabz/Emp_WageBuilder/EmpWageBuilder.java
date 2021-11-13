@@ -1,9 +1,7 @@
 package com.bridgelabz.Emp_WageBuilder;
 
-public class EmpWageBuilder 
-{
-	
-	
+public class EmpWageBuilder implements EmployeeService
+ {
 		public static final int IS_PART_TIME = 1;
 		public static final int IS_FULL_TIME = 2;
 
@@ -14,7 +12,7 @@ public class EmpWageBuilder
 			companyEmpWageArray = new CompanyEmpWage[5];
 		}
 
-		private void addCompanyEmpWage(String company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth) {
+		public void addCompanyEmpWage(String company, int empRatePerHour, int numOfWorkingDays, int maxHoursPerMonth) {
 			companyEmpWageArray[numOfCompany] = new CompanyEmpWage(company, empRatePerHour, numOfWorkingDays,
 					maxHoursPerMonth);
 			numOfCompany++;
