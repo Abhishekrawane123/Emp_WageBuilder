@@ -19,8 +19,7 @@ public class EmpWageBuilder
 		            System.out.println("Employee is Absent");
 
 		        }
-		        int wage = workingHours * WAGE_PER_HR;
-		        System.out.println("Employee Daily Wage is " + wage);
+		        
 		    }
 
 }
